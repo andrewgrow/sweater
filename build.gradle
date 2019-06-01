@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.5.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group 'com.example.sweater'
+version '1.0.0'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+    implementation "org.springframework.boot:spring-boot-devtools"
+}
+
+
+// /Users/grow/.gradle/wrapper/dists/gradle-5.4.1-bin/e75iq110yv9r9wt1a6619x2xm/gradle-5.4.1/bin/gradle build
+// java -jar /Users/grow/IdeaProjects/Sweater/build/libs/sweater-1.0.0.jar
